@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive science lessons, modules, and quizzes for the Science Club">
+    <title>Lessons - Science Club - Gov. Felicisimo T. San Luis ISHS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/lessons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2" />
+                        <path d="M25 15L30 20L25 25L20 20L25 15Z" fill="currentColor" />
+                        <circle cx="25" cy="30" r="3" fill="currentColor" />
+                        <path d="M15 35L20 32L25 35L30 32L35 35" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                    <div class="logo-text">
+                        <span class="school-initials">GFTSLIS</span>
+                        <span class="club-name">Science Club</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="news.html" class="nav-link">News & Updates</a></li>
+                <li><a href="application.html" class="nav-link">Join Us</a></li>
+                <li><a href="lessons.html" class="nav-link active">Lessons</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Particles -->
+    <section class="lessons-hero">
+        <div class="hero-background">
+            <div class="particles" id="lessonsParticles"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text-center">
+                <div class="badge">Interactive Learning Platform</div>
+                <h1 class="hero-title">
+                    Science Lessons & Modules
+                    <span class="gradient-text">Learn at Your Own Pace</span>
+                </h1>
+                <p class="hero-description">
+                    Explore our comprehensive collection of science modules, complete with lessons,
+                    interactive content, and quizzes to test your knowledge.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module Statistics -->
+    <section class="module-stats section-padding-top">
+        <div class="container">
+            <div class="stats-grid-modern">
+                <div class="stat-card-modern">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Modules</div>
+                </div>
+                <div class="stat-card-modern">
+                    <div class="stat-icon">📖</div>
+                    <div class="stat-number">48</div>
+                    <div class="stat-label">Lessons</div>
+                </div>
+                <div class="stat-card-modern">
+                    <div class="stat-icon">✏️</div>
+                    <div class="stat-number">96</div>
+                    <div class="stat-label">Quizzes</div>
+                </div>
+                <div class="stat-card-modern">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-number">24+</div>
+                    <div class="stat-label">Hours Content</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules List -->
+    <section class="modules-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Available Modules</h2>
+                <p class="section-subtitle">Click on any module to explore lessons and quizzes</p>
+            </div>
+
+            <div class="modules-list" id="modulesList">
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <svg viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="25" r="18" stroke="currentColor" stroke-width="2" />
+                            <circle cx="25" cy="25" r="4" fill="currentColor" />
+                            <path d="M25 7v8M25 35v8M7 25h8M35 25h8" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h2 class="mv-title">Our Mission</h2>
+                    <p class="mv-text">
+                        To cultivate a vibrant community of young scientists who are passionate about discovery,
+                        innovation, and using science to address real-world challenges. We strive to provide
+                        accessible, engaging, and high-quality scientific education that empowers students to
+                        become critical thinkers and problem-solvers.
+                    </p>
+                </div>
+
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <svg viewBox="0 0 50 50" fill="none">
+                            <path d="M25 10L28 20L38 23L28 26L25 36L22 26L12 23L22 20L25 10Z" stroke="currentColor"
+                                stroke-width="2" fill="none" />
+                            <circle cx="40" cy="12" r="3" fill="currentColor" />
+                            <circle cx="10" cy="38" r="2" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h2 class="mv-title">Our Vision</h2>
+                    <p class="mv-text">
+                        To be recognized as a leading science education organization that nurtures the next
+                        generation of Filipino scientists, researchers, and innovators who will contribute to
+                        national development and address global challenges through scientific excellence and
+                        ethical practice.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="core-values section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-subtitle">The principles that guide everything we do</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-number">01</div>
+                    <h3 class="value-title">Curiosity</h3>
+                    <p class="value-text">We encourage asking questions, exploring the unknown, and never stopping
+                        learning.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-number">02</div>
+                    <h3 class="value-title">Collaboration</h3>
+                    <p class="value-text">We believe that the best discoveries happen when diverse minds work together.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-number">03</div>
+                    <h3 class="value-title">Integrity</h3>
+                    <p class="value-text">We uphold honesty, ethical conduct, and responsible science in all our
+                        endeavors.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-number">04</div>
+                    <h3 class="value-title">Innovation</h3>
+                    <p class="value-text">We embrace creativity and seek novel solutions to complex problems.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-number">05</div>
+                    <h3 class="value-title">Excellence</h3>
+                    <p class="value-text">We strive for the highest standards in everything we do, from research to
+                        outreach.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-number">06</div>
+                    <h3 class="value-title">Service</h3>
+                    <p class="value-text">We are committed to using science to serve our community and make a positive
+                        impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Officers Section -->
+    <section class="officers-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Club Officers</h2>
+                <p class="section-subtitle">Meet the dedicated leaders guiding our club for 2026-2027</p>
+            </div>
+
+            <div class="officers-grid">
+                <div class="officer-card">
+                    <div class="officer-avatar">
+                        <svg viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="40" r="20" fill="#4F46E5" opacity="0.2" />
+                            <circle cx="50" cy="40" r="15" fill="#4F46E5" />
+                            <path d="M25 85c0-14 11-25 25-25s25 11 25 25" fill="#4F46E5" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <h3 class="officer-name">Maria Clara Santos</h3>
+                    <p class="officer-position">President</p>
+                    <p class="officer-bio">Grade 12 STEM student passionate about environmental science and
+                        sustainability.</p>
+                </div>
+
+                <div class="officer-card">
+                    <div class="officer-avatar">
+                        <svg viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="40" r="20" fill="#06B6D4" opacity="0.2" />
+                            <circle cx="50" cy="40" r="15" fill="#06B6D4" />
+                            <path d="M25 85c0-14 11-25 25-25s25 11 25 25" fill="#06B6D4" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <h3 class="officer-name">Juan Dela Cruz</h3>
+                    <p class="officer-position">Vice President</p>
+                    <p class="officer-bio">Robotics enthusiast who loves building and programming automated systems.</p>
+                </div>
+
+                <div class="officer-card">
+                    <div class="officer-avatar">
+                        <svg viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="40" r="20" fill="#8B5CF6" opacity="0.2" />
+                            <circle cx="50" cy="40" r="15" fill="#8B5CF6" />
+                            <path d="M25 85c0-14 11-25 25-25s25 11 25 25" fill="#8B5CF6" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <h3 class="officer-name">Anna Reyes</h3>
+                    <p class="officer-position">Secretary</p>
+                    <p class="officer-bio">Detail-oriented student with a keen interest in chemistry and research
+                        documentation.</p>
+                </div>
+
+                <div class="officer-card">
+                    <div class="officer-avatar">
+                        <svg viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="40" r="20" fill="#EC4899" opacity="0.2" />
+                            <circle cx="50" cy="40" r="15" fill="#EC4899" />
+                            <path d="M25 85c0-14 11-25 25-25s25 11 25 25" fill="#EC4899" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <h3 class="officer-name">Miguel Torres</h3>
+                    <p class="officer-position">Treasurer</p>
+                    <p class="officer-bio">Numbers-driven student who also enjoys physics and mathematical modeling.</p>
+                </div>
+
+                <div class="officer-card">
+                    <div class="officer-avatar">
+                        <svg viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="40" r="20" fill="#10B981" opacity="0.2" />
+                            <circle cx="50" cy="40" r="15" fill="#10B981" />
+                            <path d="M25 85c0-14 11-25 25-25s25 11 25 25" fill="#10B981" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <h3 class="officer-name">Sofia Mendoza</h3>
+                    <p class="officer-position">Public Relations Officer</p>
+                    <p class="officer-bio">Communications specialist with interests in astronomy and science journalism.
+                    </p>
+                </div>
+
+                <div class="officer-card">
+                    <div class="officer-avatar">
+                        <svg viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="40" r="20" fill="#F59E0B" opacity="0.2" />
+                            <circle cx="50" cy="40" r="15" fill="#F59E0B" />
+                            <path d="M25 85c0-14 11-25 25-25s25 11 25 25" fill="#F59E0B" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <h3 class="officer-name">Carlos Ramos</h3>
+                    <p class="officer-position">Events Coordinator</p>
+                    <p class="officer-bio">Creative organizer with a passion for biology and hands-on science
+                        activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Achievements</h2>
+                <p class="section-subtitle">Celebrating excellence and milestones</p>
+            </div>
+
+            <div class="achievements-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2026</div>
+                        <h3 class="timeline-title">Regional Science Quiz Champions</h3>
+                        <p class="timeline-text">Won first place at the 15th Regional Science Quiz Competition,
+                            competing against 24 schools.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2026</div>
+                        <h3 class="timeline-title">Research Publication</h3>
+                        <p class="timeline-text">Student research on water quality assessment published in the
+                            Philippine Journal of Science.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3 class="timeline-title">National Robotics Competition Finalist</h3>
+                        <p class="timeline-text">Reached the finals of the National Robotics Competition with our
+                            innovative automated sorting system.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3 class="timeline-title">Best Science Fair Project</h3>
+                        <p class="timeline-text">Awarded Best Project for a sustainable energy solution using local
+                            materials.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3 class="timeline-title">Community Science Outreach Award</h3>
+                        <p class="timeline-text">Recognized for outstanding community engagement through science
+                            education programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats-section section-padding">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Active Members</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Events Organized</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Advisers -->
+    <section class="advisers-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Faculty Advisers</h2>
+                <p class="section-subtitle">Expert mentors guiding our scientific journey</p>
+            </div>
+
+            <div class="advisers-grid">
+                <div class="adviser-card">
+                    <div class="adviser-avatar">
+                        <svg viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="40" r="20" fill="#1e40af" opacity="0.2" />
+                            <circle cx="50" cy="40" r="15" fill="#1e40af" />
+                            <path d="M25 85c0-14 11-25 25-25s25 11 25 25" fill="#1e40af" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <div class="adviser-info">
+                        <h3 class="adviser-name">Dr. Elena Garcia</h3>
+                        <p class="adviser-title">Head Adviser</p>
+                        <p class="adviser-credentials">Ph.D. in Biology | 15 years teaching experience</p>
+                        <p class="adviser-bio">
+                            Dr. Garcia specializes in environmental biology and has mentored numerous award-winning
+                            science projects. She is passionate about making science accessible to all students.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="adviser-card">
+                    <div class="adviser-avatar">
+                        <svg viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="40" r="20" fill="#047857" opacity="0.2" />
+                            <circle cx="50" cy="40" r="15" fill="#047857" />
+                            <path d="M25 85c0-14 11-25 25-25s25 11 25 25" fill="#047857" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <div class="adviser-info">
+                        <h3 class="adviser-name">Mr. Roberto Cruz</h3>
+                        <p class="adviser-title">Co-Adviser</p>
+                        <p class="adviser-credentials">M.Sc. in Physics | Robotics specialist</p>
+                        <p class="adviser-bio">
+                            Mr. Cruz brings expertise in physics and engineering, coordinating our robotics and
+                            technology-focused activities. He has led teams to multiple robotics competitions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="adviser-card">
+                    <div class="adviser-avatar">
+                        <svg viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="40" r="20" fill="#7c2d12" opacity="0.2" />
+                            <circle cx="50" cy="40" r="15" fill="#7c2d12" />
+                            <path d="M25 85c0-14 11-25 25-25s25 11 25 25" fill="#7c2d12" opacity="0.3" />
+                        </svg>
+                    </div>
+                    <div class="adviser-info">
+                        <h3 class="adviser-name">Ms. Patricia Lopez</h3>
+                        <p class="adviser-title">Co-Adviser</p>
+                        <p class="adviser-credentials">M.Sc. in Chemistry | Research coordinator</p>
+                        <p class="adviser-bio">
+                            Ms. Lopez oversees laboratory activities and research projects, ensuring safety and
+                            scientific rigor. She has published several research papers with student co-authors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 50 50" fill="none">
+                                <path
+                                    d="M43.75 16.67C43.75 35.42 25 47.92 25 47.92C25 47.92 6.25 35.42 6.25 16.67C6.25 10.48 14.65 2.08 25 2.08C35.35 2.08 43.75 10.48 43.75 16.67Z"
+                                    stroke="currentColor" stroke-width="2" />
+                                <circle cx="25" cy="16.67" r="6.25" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Science Laboratory Building<br>Gov. Felicisimo T. San Luis ISHS<br>Philippines</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 50 50" fill="none">
+                                <path
+                                    d="M6.25 14.58L25 27.08L43.75 14.58M6.25 14.58V35.42C6.25 37.7 7.73 39.58 9.38 39.58H40.62C42.27 39.58 43.75 37.7 43.75 35.42V14.58M6.25 14.58C6.25 12.3 7.73 10.42 9.38 10.42H40.62C42.27 10.42 43.75 12.3 43.75 14.58"
+                                    stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>scienceclub@gftslis.edu.ph<br>gftslis.sciclub@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 50 50" fill="none">
+                                <rect x="8" y="12" width="34" height="30" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M8 20h34M18 12v-4M32 12v-4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Meeting Schedule</h4>
+                            <p>Every Friday<br>3:30 PM - 4:30 PM<br>Science Laboratory</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" id="contactName" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" id="contactEmail" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea id="contactMessage" name="message" class="form-textarea" rows="5"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <svg class="logo-icon" viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2" />
+                            <path d="M25 15L30 20L25 25L20 20L25 15Z" fill="currentColor" />
+                            <circle cx="25" cy="30" r="3" fill="currentColor" />
+                            <path d="M15 35L20 32L25 35L30 32L35 35" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <div>
+                            <div class="footer-school">Gov. Felicisimo T. San Luis ISHS</div>
+                            <div class="footer-club">Science Club</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Empowering young minds through scientific exploration and innovation.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News & Updates</a></li>
+                        <li><a href="application.html">Join Us</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M17.5 8.33C17.5 14.17 10 19.17 10 19.17C10 19.17 2.5 14.17 2.5 8.33C2.5 4.19 5.86 0.83 10 0.83C14.14 0.83 17.5 4.19 17.5 8.33Z"
+                                    stroke="currentColor" stroke-width="1.5" />
+                                <circle cx="10" cy="8.33" r="2.5" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                            <span>Gov. Felicisimo T. San Luis ISHS Campus</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M2.5 5.83L10 10.83L17.5 5.83M2.5 5.83V14.17C2.5 15.08 3.09 15.83 3.75 15.83H16.25C16.91 15.83 17.5 15.08 17.5 14.17V5.83M2.5 5.83C2.5 4.92 3.09 4.17 3.75 4.17H16.25C16.91 4.17 17.5 4.92 17.5 5.83"
+                                    stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                            <span>scienceclub@gftslis.edu.ph</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gov. Felicisimo T. San Luis Integrated Senior High School Science Club. All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

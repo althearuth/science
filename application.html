@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apply to join the Science Club at Gov. Felicisimo T. San Luis Integrated Senior High School">
+    <title>Join Us - Science Club - Gov. Felicisimo T. San Luis ISHS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2" />
+                        <path d="M25 15L30 20L25 25L20 20L25 15Z" fill="currentColor" />
+                        <circle cx="25" cy="30" r="3" fill="currentColor" />
+                        <path d="M15 35L20 32L25 35L30 32L35 35" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                    <div class="logo-text">
+                        <span class="school-initials">GFTSLIS</span>
+                        <span class="club-name">Science Club</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="news.html" class="nav-link">News & Updates</a></li>
+                <li><a href="application.html" class="nav-link active">Join Us</a></li>
+                <li><a href="lessons.html" class="nav-link">Lessons</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Join the Science Club</h1>
+                <p class="page-description">Begin your journey in scientific exploration and discovery</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Info -->
+    <section class="application-info section-padding-top">
+        <div class="container">
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="20" r="8" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 42c0-7 6-13 13-13s13 6 13 13" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="info-title">Who Can Join?</h3>
+                    <p class="info-text">All currently enrolled students of Gov. Felicisimo T. San Luis ISHS with a
+                        passion for science are welcome to apply.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 50 50" fill="none">
+                            <rect x="10" y="12" width="30" height="30" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M10 20h30M18 12v-4M32 12v-4" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <circle cx="18" cy="28" r="2" fill="currentColor" />
+                            <circle cx="25" cy="28" r="2" fill="currentColor" />
+                            <circle cx="32" cy="28" r="2" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3 class="info-title">Application Period</h3>
+                    <p class="info-text">Applications are accepted at the beginning of each semester. Next deadline:
+                        December 31, 2026.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 50 50" fill="none">
+                            <path d="M15 25L22 32L35 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="25" cy="25" r="17" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="info-title">What's Next?</h3>
+                    <p class="info-text">After submitting your application, you'll receive a confirmation email.
+                        Selected applicants will be notified within 2 weeks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form-section section-padding">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2 class="form-title">Membership Application Form</h2>
+                    <p class="form-subtitle">Please fill out all required fields. Fields marked with <span
+                            class="required">*</span> are mandatory.</p>
+                </div>
+
+                <form class="application-form" id="applicationForm">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="section-title">Personal Information</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name <span
+                                        class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="middleName" class="form-label">Middle Name</label>
+                                <input type="text" id="middleName" name="middleName" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name <span
+                                        class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address <span
+                                        class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <span class="form-hint">Use your school email or personal email</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number <span
+                                        class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                                <span class="form-hint">Format: 09XX-XXX-XXXX</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="birthdate" class="form-label">Date of Birth <span
+                                        class="required">*</span></label>
+                                <input type="date" id="birthdate" name="birthdate" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gender" class="form-label">Gender <span class="required">*</span></label>
+                                <select id="gender" name="gender" class="form-input" required>
+                                    <option value="">Select gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Information -->
+                    <div class="form-section">
+                        <h3 class="section-title">Academic Information</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentId" class="form-label">Student ID Number <span
+                                        class="required">*</span></label>
+                                <input type="text" id="studentId" name="studentId" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gradeLevel" class="form-label">Grade Level <span
+                                        class="required">*</span></label>
+                                <select id="gradeLevel" name="gradeLevel" class="form-input" required>
+                                    <option value="">Select grade level</option>
+                                    <option value="11">Grade 11</option>
+                                    <option value="12">Grade 12</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="strand" class="form-label">Strand/Track <span
+                                        class="required">*</span></label>
+                                <select id="strand" name="strand" class="form-input" required>
+                                    <option value="">Select strand</option>
+                                    <option value="stem">STEM</option>
+                                    <option value="abm">ABM</option>
+                                    <option value="humss">HUMSS</option>
+                                    <option value="gas">GAS</option>
+                                    <option value="tvl">TVL</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="section" class="form-label">Section <span class="required">*</span></label>
+                                <input type="text" id="section" name="section" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gwa" class="form-label">General Weighted Average (GWA) - Previous
+                                Semester</label>
+                            <input type="number" id="gwa" name="gwa" class="form-input" step="0.01" min="1" max="100">
+                            <span class="form-hint">Optional: This helps us understand your academic standing</span>
+                        </div>
+                    </div>
+
+                    <!-- Science Interests -->
+                    <div class="form-section">
+                        <h3 class="section-title">Science Interests</h3>
+
+                        <div class="form-group">
+                            <label class="form-label">Which areas of science interest you most? <span
+                                    class="required">*</span></label>
+                            <span class="form-hint">Select all that apply</span>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="biology">
+                                    <span>Biology</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="chemistry">
+                                    <span>Chemistry</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="physics">
+                                    <span>Physics</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="earth-science">
+                                    <span>Earth Science</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="astronomy">
+                                    <span>Astronomy</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="environmental">
+                                    <span>Environmental Science</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="robotics">
+                                    <span>Robotics & Engineering</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="computer-science">
+                                    <span>Computer Science</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="previousExperience" class="form-label">Previous Science-Related
+                                Experience</label>
+                            <textarea id="previousExperience" name="previousExperience" class="form-textarea" rows="4"
+                                placeholder="Have you participated in science fairs, competitions, or other science-related activities? Tell us about it!"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Motivation -->
+                    <div class="form-section">
+                        <h3 class="section-title">Motivation & Goals</h3>
+
+                        <div class="form-group">
+                            <label for="whyJoin" class="form-label">Why do you want to join the Science Club? <span
+                                    class="required">*</span></label>
+                            <textarea id="whyJoin" name="whyJoin" class="form-textarea" rows="5" required
+                                placeholder="Share your motivation and what you hope to achieve as a member..."></textarea>
+                            <span class="form-hint">Minimum 50 words</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contribution" class="form-label">What can you contribute to the club?</label>
+                            <textarea id="contribution" name="contribution" class="form-textarea" rows="4"
+                                placeholder="Tell us about your skills, talents, or ideas that could benefit the club..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="form-section">
+                        <h3 class="section-title">Availability & Commitment</h3>
+
+                        <div class="form-group">
+                            <label class="form-label">Can you attend weekly meetings? <span
+                                    class="required">*</span></label>
+                            <span class="form-hint">Meetings are held every Friday at 3:30 PM</span>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="availability" value="yes" required>
+                                    <span>Yes, I can attend regularly</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="availability" value="mostly" required>
+                                    <span>Mostly, with occasional conflicts</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="availability" value="limited" required>
+                                    <span>Limited availability</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Are you willing to participate in weekend events and field trips?
+                                <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="weekendEvents" value="yes" required>
+                                    <span>Yes</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="weekendEvents" value="sometimes" required>
+                                    <span>Sometimes</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="weekendEvents" value="no" required>
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parent/Guardian Consent -->
+                    <div class="form-section">
+                        <h3 class="section-title">Parent/Guardian Information</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parentName" class="form-label">Parent/Guardian Name <span
+                                        class="required">*</span></label>
+                                <input type="text" id="parentName" name="parentName" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="parentPhone" class="form-label">Parent/Guardian Phone <span
+                                        class="required">*</span></label>
+                                <input type="tel" id="parentPhone" name="parentPhone" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parentEmail" class="form-label">Parent/Guardian Email</label>
+                            <input type="email" id="parentEmail" name="parentEmail" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label consent-checkbox">
+                                <input type="checkbox" name="parentConsent" required>
+                                <span>I confirm that my parent/guardian is aware of this application and consents to my
+                                    participation in Science Club activities. <span class="required">*</span></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <div class="form-section">
+                        <h3 class="section-title">Agreement</h3>
+
+                        <div class="agreement-box">
+                            <p><strong>By submitting this application, I agree to:</strong></p>
+                            <ul>
+                                <li>Attend regular club meetings and participate actively</li>
+                                <li>Follow all club rules and regulations</li>
+                                <li>Maintain good academic standing</li>
+                                <li>Respect fellow members and club officers</li>
+                                <li>Represent the club positively in all activities</li>
+                                <li>Pay any applicable membership fees or activity costs</li>
+                            </ul>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label consent-checkbox">
+                                <input type="checkbox" name="terms" required>
+                                <span>I have read and agree to the terms and conditions stated above. <span
+                                        class="required">*</span></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Buttons -->
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-secondary">
+                            <span>Clear Form</span>
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span>Submit Application</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Success Message (Hidden by default) -->
+            <div class="success-message" id="successMessage" style="display: none;">
+                <div class="success-icon">
+                    <svg viewBox="0 0 50 50" fill="none">
+                        <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2" />
+                        <path d="M15 25L22 32L35 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3 class="success-title">Application Submitted Successfully!</h3>
+                <p class="success-text">
+                    Thank you for your interest in joining the Science Club. We have received your application
+                    and will review it carefully. You will receive a confirmation email shortly, and selected
+                    applicants will be notified within 2 weeks.
+                </p>
+                <a href="index.html" class="btn btn-primary">
+                    <span>Return to Homepage</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Have questions about joining? We've got answers!</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there a membership fee?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There is a nominal annual membership fee of ₱200 to cover materials, club activities, and
+                            t-shirt. Financial assistance is available for qualified students.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I join if I'm not in the STEM strand?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! The Science Club welcomes students from all strands. As long as you have an
+                            interest in science and a willingness to learn, you're welcome to apply.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How much time commitment is required?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Regular members are expected to attend weekly meetings (1 hour) and participate in at least
+                            50% of club events. Additional time may be needed for special projects or competitions, but
+                            we work around your schedule.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What if my application is not accepted?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can reapply in the next application period. We also encourage you to attend our open
+                            events to demonstrate your interest and get to know the club better.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I participate in competitions?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! All members are encouraged to participate in science competitions. The club provides
+                            training, mentorship, and support for various competitions at the school, regional, and
+                            national levels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <svg class="logo-icon" viewBox="0 0 50 50" fill="none">
+                            <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2" />
+                            <path d="M25 15L30 20L25 25L20 20L25 15Z" fill="currentColor" />
+                            <circle cx="25" cy="30" r="3" fill="currentColor" />
+                            <path d="M15 35L20 32L25 35L30 32L35 35" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <div>
+                            <div class="footer-school">Gov. Felicisimo T. San Luis ISHS</div>
+                            <div class="footer-club">Science Club</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Empowering young minds through scientific exploration and innovation.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News & Updates</a></li>
+                        <li><a href="application.html">Join Us</a></li>
+                        <li><a href="lessons.html">Lessons</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M17.5 8.33C17.5 14.17 10 19.17 10 19.17C10 19.17 2.5 14.17 2.5 8.33C2.5 4.19 5.86 0.83 10 0.83C14.14 0.83 17.5 4.19 17.5 8.33Z"
+                                    stroke="currentColor" stroke-width="1.5" />
+                                <circle cx="10" cy="8.33" r="2.5" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                            <span>Gov. Felicisimo T. San Luis ISHS Campus</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M2.5 5.83L10 10.83L17.5 5.83M2.5 5.83V14.17C2.5 15.08 3.09 15.83 3.75 15.83H16.25C16.91 15.83 17.5 15.08 17.5 14.17V5.83M2.5 5.83C2.5 4.92 3.09 4.17 3.75 4.17H16.25C16.91 4.17 17.5 4.92 17.5 5.83"
+                                    stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                            <span>scienceclub@gftslis.edu.ph</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gov. Felicisimo T. San Luis Integrated Senior High School Science Club. All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
